@@ -1,0 +1,35 @@
+{
+  "status": "REGISTRATION_AUDIT_COMPLETE",
+  "rigid_alignment_findings": {
+    "spatial_grid_matching": {
+      "NAT_ART_VEN": "Identical dimensions (293, 512, 512) and pixel spacing (0.6836 mm)",
+      "DEL": "Mismatched dimensions (317, 512, 512), pixel spacing (0.9766 mm), and Origin (-260.0, -81.2, -598.8 mm)"
+    },
+    "anisotropy_ratio_Z_to_XY": 2.1942857142857144,
+    "spine_anchor_displacement_mm": {
+      "NAT_vs_ART": [
+        1.49,
+        -3.79,
+        7.45
+      ],
+      "VEN_vs_ART": [
+        1.3,
+        -3.88,
+        6.84
+      ]
+    },
+    "renal_organ_excursion_respiratory_mm": {
+      "NAT_vs_ART": [
+        0.81,
+        1.23,
+        -1.82
+      ],
+      "VEN_vs_ART": [
+        0.42,
+        -0.3,
+        2.69
+      ]
+    }
+  },
+  "scientific_conclusion": "Giữa các pha chụp có hiện tượng dịch chuyển giải phẫu do nhịp thở và nhu động ruột (Độ lệch thận trái giữa NAT và ART khoảng Z=0.8mm, Y=1.2mm, X=-1.8mm). Việc nội suy tọa độ affine đơn thuần (identity grid interpolation) chưa giải quyết được biến dạng phi tuyến (non-rigid deformation). Cần thực hiện Deformable Registration (B-spline / Demons qua SimpleITK/Elastix) có kiểm định landmark trước khi hợp nhất đa pha."
+}

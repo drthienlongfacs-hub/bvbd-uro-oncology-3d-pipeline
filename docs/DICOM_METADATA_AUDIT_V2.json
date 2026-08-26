@@ -1,0 +1,179 @@
+{
+  "generated": "2026-08-26T13:02:32.249781",
+  "status": "CLAIM_GATE_BLOCKS_STRONG_CLAIMS",
+  "phase_labels_confirmed": false,
+  "phase_labels_source": "ASSUMED_FROM_ACQUISITION_TIME_ONLY",
+  "requires_radiologist_confirmation": true,
+  "series": {
+    "nat": {
+      "phase_label_source": "ASSUMED_FROM_ACQUISITION_TIME",
+      "n_slices": 293,
+      "pixel_spacing_mm": [
+        0.68359375,
+        0.68359375
+      ],
+      "slice_thickness_mm": 3.0,
+      "reconstruction_interval_mm": 1.5,
+      "rows": 512,
+      "cols": 512,
+      "z_range_mm": [
+        -561.84,
+        -123.84
+      ],
+      "acquisition_time": "190647",
+      "series_time": "190705.570",
+      "contrast_bolus_agent": "NOT_IN_METADATA",
+      "contrast_bolus_volume": "NOT_IN_METADATA",
+      "contrast_bolus_start_time": "NOT_IN_METADATA",
+      "kvp": "120",
+      "exposure_time": "500",
+      "series_description": "iDose (4)",
+      "protocol_name": "Bung CE (MANUAL) /Abdomen",
+      "image_comments": "",
+      "rescale_slope": 1.0,
+      "rescale_intercept": -1024.0,
+      "IOP": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "IPP_first": [
+        -191.1,
+        -6.2,
+        -561.84
+      ]
+    },
+    "art": {
+      "phase_label_source": "ASSUMED_FROM_ACQUISITION_TIME",
+      "n_slices": 293,
+      "pixel_spacing_mm": [
+        0.68359375,
+        0.68359375
+      ],
+      "slice_thickness_mm": 3.0,
+      "reconstruction_interval_mm": 1.5,
+      "rows": 512,
+      "cols": 512,
+      "z_range_mm": [
+        -561.84,
+        -123.84
+      ],
+      "acquisition_time": "190806",
+      "series_time": "190822.638",
+      "contrast_bolus_agent": "NOT_IN_METADATA",
+      "contrast_bolus_volume": "NOT_IN_METADATA",
+      "contrast_bolus_start_time": "NOT_IN_METADATA",
+      "kvp": "120",
+      "exposure_time": "500",
+      "series_description": "iDose (4)",
+      "protocol_name": "Bung CE (MANUAL) /Abdomen",
+      "image_comments": "",
+      "rescale_slope": 1.0,
+      "rescale_intercept": -1024.0,
+      "IOP": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "IPP_first": [
+        -191.1,
+        -6.2,
+        -561.84
+      ]
+    },
+    "ven": {
+      "phase_label_source": "ASSUMED_FROM_ACQUISITION_TIME",
+      "n_slices": 293,
+      "pixel_spacing_mm": [
+        0.68359375,
+        0.68359375
+      ],
+      "slice_thickness_mm": 3.0,
+      "reconstruction_interval_mm": 1.5,
+      "rows": 512,
+      "cols": 512,
+      "z_range_mm": [
+        -561.84,
+        -123.84
+      ],
+      "acquisition_time": "190906",
+      "series_time": "190955.838",
+      "contrast_bolus_agent": "NOT_IN_METADATA",
+      "contrast_bolus_volume": "NOT_IN_METADATA",
+      "contrast_bolus_start_time": "NOT_IN_METADATA",
+      "kvp": "120",
+      "exposure_time": "500",
+      "series_description": "iDose (4)",
+      "protocol_name": "Bung CE (MANUAL) /Abdomen",
+      "image_comments": "",
+      "rescale_slope": 1.0,
+      "rescale_intercept": -1024.0,
+      "IOP": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "IPP_first": [
+        -191.1,
+        -6.2,
+        -561.84
+      ]
+    },
+    "del": {
+      "phase_label_source": "ASSUMED_FROM_ACQUISITION_TIME",
+      "n_slices": 317,
+      "pixel_spacing_mm": [
+        0.9765625,
+        0.9765625
+      ],
+      "slice_thickness_mm": 3.0,
+      "reconstruction_interval_mm": 1.5,
+      "rows": 512,
+      "cols": 512,
+      "z_range_mm": [
+        -598.8,
+        -124.8
+      ],
+      "acquisition_time": "191917",
+      "series_time": "191927.558",
+      "contrast_bolus_agent": "NOT_IN_METADATA",
+      "contrast_bolus_volume": "NOT_IN_METADATA",
+      "contrast_bolus_start_time": "NOT_IN_METADATA",
+      "kvp": "120",
+      "exposure_time": "417",
+      "series_description": "",
+      "protocol_name": "Abdomen DELAY /Abdomen",
+      "image_comments": "",
+      "rescale_slope": 1.0,
+      "rescale_intercept": -1024.0,
+      "IOP": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "IPP_first": [
+        -260.0,
+        -81.2,
+        -598.8
+      ]
+    }
+  },
+  "inter_series_timing_seconds": {
+    "nat": 0.0,
+    "art": 79.0,
+    "ven": 139.0,
+    "del": 750.0
+  }
+}

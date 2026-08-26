@@ -1,0 +1,204 @@
+{
+  "audit_version": "V2_RIGOROUS_GEOMETRY_GATE",
+  "mesh_directory": "/Users/mac/Desktop/ho so benh an 2026/KET_QUA_MDT_VA_DUNG_HINH_3D/3D_MODELS_OBJ_STL",
+  "results": {
+    "arterial_system": {
+      "vertices": 3688,
+      "faces": 7360,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": 8,
+      "connected_components": 4,
+      "extents_mm_xyz": [
+        33.8,
+        25.1,
+        179.7
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "collecting_system": {
+      "vertices": 58806,
+      "faces": 117612,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": 0,
+      "connected_components": 12,
+      "extents_mm_xyz": [
+        128.7,
+        88.1,
+        144.3
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "involved_tumor_calyx": {
+      "vertices": 922,
+      "faces": 1856,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": -6,
+      "connected_components": 1,
+      "extents_mm_xyz": [
+        11.5,
+        21.6,
+        16.4
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "left_kidney_parenchyma": {
+      "vertices": 71950,
+      "faces": 144568,
+      "is_watertight": false,
+      "is_volume": false,
+      "euler_characteristic": -307,
+      "connected_components": 259,
+      "extents_mm_xyz": [
+        99.1,
+        120.8,
+        141.3
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FAIL_NON_WATERTIGHT_LEAKY_SURFACE",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "left_kidney_tumor": {
+      "vertices": 40813,
+      "faces": 81670,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": -22,
+      "connected_components": 1,
+      "extents_mm_xyz": [
+        80.7,
+        73.8,
+        70.7
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "left_tumor_necrotic_core": {
+      "vertices": 7177,
+      "faces": 14214,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": 70,
+      "connected_components": 42,
+      "extents_mm_xyz": [
+        57.4,
+        60.8,
+        66.3
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "resection_safety_margin": {
+      "vertices": 65135,
+      "faces": 132070,
+      "is_watertight": false,
+      "is_volume": false,
+      "euler_characteristic": -864,
+      "connected_components": 171,
+      "extents_mm_xyz": [
+        103.2,
+        102.7,
+        133.3
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FAIL_NON_WATERTIGHT_LEAKY_SURFACE",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "right_kidney": {
+      "vertices": 122149,
+      "faces": 250874,
+      "is_watertight": false,
+      "is_volume": false,
+      "euler_characteristic": -3153,
+      "connected_components": 112,
+      "extents_mm_xyz": [
+        115.6,
+        134.4,
+        141.2
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FAIL_NON_WATERTIGHT_LEAKY_SURFACE",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "right_kidney_cyst": {
+      "vertices": 35971,
+      "faces": 77394,
+      "is_watertight": false,
+      "is_volume": false,
+      "euler_characteristic": -2717,
+      "connected_components": 8,
+      "extents_mm_xyz": [
+        58.8,
+        75.5,
+        69.4
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FAIL_NON_WATERTIGHT_LEAKY_SURFACE",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "spine_ribs": {
+      "vertices": 276041,
+      "faces": 557686,
+      "is_watertight": false,
+      "is_volume": false,
+      "euler_characteristic": -2796,
+      "connected_components": 24,
+      "extents_mm_xyz": [
+        264.7,
+        175.5,
+        243.7
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FAIL_NON_WATERTIGHT_LEAKY_SURFACE",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    },
+    "venous_system": {
+      "vertices": 102999,
+      "faces": 206054,
+      "is_watertight": true,
+      "is_volume": false,
+      "euler_characteristic": -28,
+      "connected_components": 7,
+      "extents_mm_xyz": [
+        139.6,
+        81.5,
+        191.9
+      ],
+      "computed_mesh_volume_ml": null,
+      "is_winding_consistent": true,
+      "qa_status": "FLAG_DISCONNECTED_TOPOLOGY",
+      "approved_for_3d_printing_or_navigation": false,
+      "clinical_warning": "KHÔNG DÙNG ĐỂ ĐO LƯỜNG HOẶC DẪN ĐƯỜNG PHẪU THUẬT KHI CHƯA QUA BS CĐHA KIỂM ĐỊNH CONTOUR"
+    }
+  }
+}

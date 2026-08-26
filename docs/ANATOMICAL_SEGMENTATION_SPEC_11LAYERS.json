@@ -1,0 +1,117 @@
+{
+  "standard_version": "BVBD_URO_ONCOLOGY_11_LAYER_SPEC_V2",
+  "target_cohort": "RENAL_CELL_CARCINOMA_PREOPERATIVE_PLANNING",
+  "dicom_iod_target": "DICOM_SEGMENTATION_STORAGE_SOP_CLASS (1.2.840.10008.5.1.4.1.1.66.4)",
+  "layers": [
+    {
+      "layer_id": 1,
+      "label_name": "right_kidney_whole",
+      "anatomy_vi": "Toàn bộ thận phải (Đối bên lành mạnh)",
+      "snomed_concept": "64033007 (Kidney structure)",
+      "primary_phase": "VENOUS_NEPHROGRAPHIC",
+      "hu_range_expected": "30 to 240 HU",
+      "validation_metric": "Dice >= 0.92, HD95 <= 3.0 mm"
+    },
+    {
+      "layer_id": 2,
+      "label_name": "left_kidney_whole",
+      "anatomy_vi": "Toàn bộ thận trái (Bao gồm nhu mô + bướu + xoang)",
+      "snomed_concept": "64033007 (Kidney structure)",
+      "primary_phase": "VENOUS_NEPHROGRAPHIC",
+      "hu_range_expected": "30 to 240 HU",
+      "validation_metric": "Dice >= 0.90, HD95 <= 3.5 mm"
+    },
+    {
+      "layer_id": 3,
+      "label_name": "left_kidney_cortex",
+      "anatomy_vi": "Vỏ thận trái (Cortex lành mạnh ngoài bướu)",
+      "snomed_concept": "53787006 (Renal cortex)",
+      "primary_phase": "ARTERIAL_CORTICOMEDULLARY (30-40s)",
+      "hu_range_expected": "120 to 220 HU",
+      "validation_metric": "Dice >= 0.85, HD95 <= 2.5 mm"
+    },
+    {
+      "layer_id": 4,
+      "label_name": "left_kidney_medulla",
+      "anatomy_vi": "Tủy thận trái (Medullary pyramids)",
+      "snomed_concept": "25253006 (Renal medulla)",
+      "primary_phase": "VENOUS_NEPHROGRAPHIC (70-90s)",
+      "hu_range_expected": "80 to 160 HU",
+      "validation_metric": "Dice >= 0.80, HD95 <= 3.0 mm"
+    },
+    {
+      "layer_id": 5,
+      "label_name": "left_renal_sinus_fat",
+      "anatomy_vi": "Xoang thận & Mỡ xoang thận (Renal sinus fat)",
+      "snomed_concept": "245558003 (Renal sinus)",
+      "primary_phase": "NON_CONTRAST & VENOUS",
+      "hu_range_expected": "-120 to +20 HU",
+      "validation_metric": "Dice >= 0.82, HD95 <= 2.5 mm"
+    },
+    {
+      "layer_id": 6,
+      "label_name": "left_tumor_enhancing_viable",
+      "anatomy_vi": "Bướu thận trái phần sống/tăng quang (Viable RCC)",
+      "snomed_concept": "41607009 (Renal cell carcinoma)",
+      "primary_phase": "ARTERIAL & VENOUS",
+      "hu_range_expected": "80 to 250 HU (Heterogeneous early enhancement)",
+      "validation_metric": "Dice >= 0.85, HD95 <= 3.0 mm, Volume Error <= 5%"
+    },
+    {
+      "layer_id": 7,
+      "label_name": "left_tumor_necrotic_cystic",
+      "anatomy_vi": "Lõi hoại tử / dịch hóa / nang trong bướu",
+      "snomed_concept": "6574001 (Necrosis)",
+      "primary_phase": "ALL_PHASES (Non-enhancing core)",
+      "hu_range_expected": "0 to 35 HU",
+      "validation_metric": "Dice >= 0.80, HD95 <= 3.0 mm"
+    },
+    {
+      "layer_id": 8,
+      "label_name": "collecting_system_pelvicalyceal",
+      "anatomy_vi": "Hệ thống đài bể thận & Niệu quản đoạn gần",
+      "snomed_concept": "25990002 (Renal pelvis), 245557008 (Renal calyx)",
+      "primary_phase": "DELAYED_EXCRETORY (>10 min)",
+      "hu_range_expected": "> 180 HU (Opacified urine)",
+      "validation_metric": "Dice >= 0.85, Continuous Topology to UPJ confirmed"
+    },
+    {
+      "layer_id": 9,
+      "label_name": "arterial_tree_aorta_lra",
+      "anatomy_vi": "Động mạch chủ bụng & Động mạch thận trái + Nhánh phân thùy",
+      "snomed_concept": "2841007 (Renal artery)",
+      "primary_phase": "ARTERIAL (30s)",
+      "hu_range_expected": "> 250 HU",
+      "validation_metric": "Centerline continuity verified from Aorta ostium"
+    },
+    {
+      "layer_id": 10,
+      "label_name": "venous_tree_ivc_lrv",
+      "anatomy_vi": "Tĩnh mạch chủ dưới & Tĩnh mạch thận trái",
+      "snomed_concept": "56400007 (Renal vein)",
+      "primary_phase": "VENOUS (70-90s)",
+      "hu_range_expected": "110 to 220 HU",
+      "validation_metric": "IVC junction & ostium continuity verified"
+    },
+    {
+      "layer_id": 11,
+      "label_name": "perinephric_fat_gerota",
+      "anatomy_vi": "Mỡ quanh thận trong cân Gerota (Loại trừ mỡ xoang và mỡ cạnh thận)",
+      "snomed_concept": "245559006 (Perirenal fat)",
+      "primary_phase": "NON_CONTRAST & VENOUS",
+      "hu_range_expected": "-195 to -45 HU",
+      "validation_metric": "Fascia boundary manually/semi-automatically bounded"
+    }
+  ],
+  "expert_signoff_protocol": {
+    "radiology_expert": "Bác sĩ Chẩn đoán Hình ảnh Bụng - Niệu (Review slice-by-slice & contour sign-off)",
+    "urology_expert": "Phẫu thuật viên Tiết niệu (Review 3D spatial relationship & operative feasibility)",
+    "qa_gates": [
+      "Gate 1: Multi-planar overlay (Axial, Coronal, Sagittal) across all active slices",
+      "Gate 2: Inter-observer agreement (Dice >= 0.85 across key landmarks)",
+      "Gate 3: Centerline continuity & branch count audit for vascular anatomy",
+      "Gate 4: Morphological continuity from minor calyces to ureteropelvic junction",
+      "Gate 5: Formal MDT consensus recorded in EHR before any surgical decision"
+    ]
+  }
+}
